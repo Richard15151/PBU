@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partido Brasil Unido (PBU)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Estilos adicionais para a transição do hover nas cartas */
+        .card-hover-effect {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card-hover-effect:hover {
+            transform: scale(1.02); /* Leve elevação no hover */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Sombra suave */
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+    <header class="bg-blue-700 text-white py-4 shadow-xl sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center px-6 md:px-12">
+            <div class="flex items-center gap-3">
+                <div class="h-10 w-10 rounded-lg flex items-center justify-center"><img src="./logoPBU.png" alt="logo"></div>
+                <h1 class="font-extrabold text-xl tracking-wider">PBU - Partido Brasil Unido</h1>
+            </div>
+            <nav class="hidden md:flex gap-6 text-lg">
+                <a href="#sobre" class="hover:text-yellow-300 transition duration-300">Sobre</a>
+                <a href="#valores" class="hover:text-yellow-300 transition duration-300">Valores</a>
+                <a href="#propostas" class="hover:text-yellow-300 transition duration-300">Propostas</a>
+                <a href="#estrutura" class="hover:text-yellow-300 transition duration-300">Estrutura</a>
+                <a href="#base" class="hover:text-yellow-300 transition duration-300">Base Eleitoral</a>
+                <a href="#contato" class="hover:text-yellow-300 transition duration-300">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-blue-800 h-[90vh] flex items-center px-6 md:px-12">
+        <div class="container mx-auto grid md:grid-cols-2 gap-8 items-center">
+            <div class="hidden md:block">
+                <div class="h-96 w-full bg-blue-700 rounded-xl shadow-2xl flex items-center justify-center">
+                    <span class="text-white text-2xl font-bold">Imagem de Destaque (União/Diálogo)</span>
+                </div>
+            </div>
+            <div class="text-right text-white p-6 md:p-0">
+                <h2 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
+                    <span class="text-yellow-400">Partido</span> Brasil Unido
+                </h2>
+                <p class="text-2xl md:text-3xl font-light mb-6">
+                    Resgatando o <strong class="font-bold text-yellow-300">diálogo</strong>, a união e o <strong class="font-bold text-yellow-300">progresso</strong>.
+                </p>
+                <a href="#propostas" class="inline-block bg-yellow-400 text-blue-900 font-bold py-3 px-8 rounded-full hover:bg-yellow-300 transition duration-300 shadow-lg hover:shadow-xl">
+                    Conheça Nossas Propostas
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-20 px-6 md:px-12 bg-gray-50">
+        <div class="container mx-auto grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <h2 class="text-4xl font-extrabold text-blue-800 mb-6 border-b-4 border-yellow-400 pb-2 inline-block">Nossa História</h2>
+                <p class="text-lg leading-relaxed text-justify mb-4">
+                    O Partido Brasil Unido (PBU) nasceu em um período de intensos debates políticos e de grande divisão social. Surgimos com o objetivo de **resgatar o diálogo, a união e a confiança** entre os brasileiros.
+                </p>
+                <p class="text-lg leading-relaxed text-justify">
+                    Nosso lema, **“Pelo povo e para o povo”**, representa o compromisso com a escuta ativa, o respeito às diferenças e a busca por soluções equilibradas e justas para todos, construindo uma nova via para a política nacional.
+                </p>
+            </div>
+            <div class="flex justify-center md:justify-end">
+                <div class="w-full md:w-96 h-60 bg-green-200 rounded-xl shadow-xl flex items-center justify-center border-4 border-green-500">
+                    <span class="text-green-800 text-center font-bold">Imagem Retangular (História do PBU)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="valores" class="py-20 px-6 md:px-12 bg-white text-center">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl font-extrabold text-green-700 mb-6 border-b-4 border-yellow-400 pb-2 inline-block">Ideologia e Valores</h2>
+            <p class="text-xl leading-relaxed mb-8">
+                O PBU se posiciona no **centro político**, acreditando que o equilíbrio é o caminho para o progresso. O partido defende que o **desenvolvimento econômico** e a **justiça social** devem caminhar lado a lado.
+            </p>
+            <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-lg justify-items-center">
+                <li class="bg-green-100 p-4 rounded-xl shadow-md card-hover-effect max-w-sm w-full">🤝 União nacional e diálogo.</li>
+                <li class="bg-green-100 p-4 rounded-xl shadow-md card-hover-effect max-w-sm w-full">⚖️ Justiça social e economia.</li>
+                <li class="bg-green-100 p-4 rounded-xl shadow-md card-hover-effect max-w-sm w-full">📚 Educação e trabalho.</li>
+                <li class="bg-green-100 p-4 rounded-xl shadow-md card-hover-effect max-w-sm w-full">📢 Transparência e combate à corrupção.</li>
+                <li class="bg-green-100 p-4 rounded-xl shadow-md card-hover-effect max-w-sm w-full">🌿 Sustentabilidade e inovação tecnológica.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="propostas" class="py-20 px-6 md:px-12 bg-gray-50">
+        <h2 class="text-4xl font-extrabold text-blue-800 mb-12 text-center">Nossas Propostas e Plano de Governo</h2>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
+            <div class="bg-white shadow-xl p-6 rounded-xl border-t-4 border-yellow-400 card-hover-effect">
+                <h3 class="font-extrabold text-2xl mb-3 text-blue-700">Economia</h3>
+                <p>Fomento a pequenas e médias empresas, incentivo à agricultura familiar e parcerias público-privadas para gerar empregos e modernizar a infraestrutura.</p>
+            </div>
+            <div class="bg-white shadow-xl p-6 rounded-xl border-t-4 border-yellow-400 card-hover-effect">
+                <h3 class="font-extrabold text-2xl mb-3 text-blue-700">Educação</h3>
+                <p>Ensino público de qualidade, formação continuada para professores e bolsas de estudo pelo programa “Brasil do Saber”.</p>
+            </div>
+            <div class="bg-white shadow-xl p-6 rounded-xl border-t-4 border-yellow-400 card-hover-effect">
+                <h3 class="font-extrabold text-2xl mb-3 text-blue-700">Saúde</h3>
+                <p>Fortalecimento do SUS, foco na prevenção, parcerias com universidades e campanhas sobre saúde mental e alimentação saudável.</p>
+            </div>
+            <div class="bg-white shadow-xl p-6 rounded-xl border-t-4 border-yellow-400 card-hover-effect">
+                <h3 class="font-extrabold text-2xl mb-3 text-blue-700">Meio Ambiente</h3>
+                <p>Incentivo às energias renováveis, reflorestamento e economia verde com foco em consumo consciente.</p>
+            </div>
+            <div class="bg-white shadow-xl p-6 rounded-xl border-t-4 border-yellow-400 card-hover-effect">
+                <h3 class="font-extrabold text-2xl mb-3 text-blue-700">Direitos Humanos</h3>
+                <p>Combate à discriminação, igualdade de oportunidades e inclusão social nas comunidades vulneráveis.</p>
+            </div>
+            <div class="bg-white shadow-xl p-6 rounded-xl border-t-4 border-yellow-400 card-hover-effect">
+                <h3 class="font-extrabold text-2xl mb-3 text-blue-700">Segurança</h3>
+                <p>Investimento em inteligência policial, formação humanizada e programas sociais em áreas de risco.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="estrutura" class="py-20 px-6 md:px-12 bg-white">
+        <h2 class="text-4xl font-extrabold text-green-700 mb-12 text-center">Estrutura Organizacional</h2>
+        <div class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-8 max-w-7xl mx-auto">
+            <div class="p-6 bg-gray-50 shadow-lg rounded-xl text-center hover:bg-gray-100 transition duration-300">
+                <div class="w-24 h-24 bg-blue-300 rounded-full mx-auto mb-4 border-4 border-blue-600"></div>
+                <h3 class="font-extrabold text-xl text-blue-700">Presidente</h3>
+                <p class="text-sm text-gray-600 mt-1">Representação e Diretrizes Nacionais.</p>
+            </div>
+            <div class="p-6 bg-gray-50 shadow-lg rounded-xl text-center hover:bg-gray-100 transition duration-300">
+                <div class="w-24 h-24 bg-blue-300 rounded-full mx-auto mb-4 border-4 border-blue-600"></div>
+                <h3 class="font-extrabold text-xl text-blue-700">Vice-Presidente</h3>
+                <p class="text-sm text-gray-600 mt-1">Coordenação Interna e Substituição.</p>
+            </div>
+            <div class="p-6 bg-gray-50 shadow-lg rounded-xl text-center hover:bg-gray-100 transition duration-300">
+                <div class="w-24 h-24 bg-blue-300 rounded-full mx-auto mb-4 border-4 border-blue-600"></div>
+                <h3 class="font-extrabold text-xl text-blue-700">Secretário de Comunicação</h3>
+                <p class="text-sm text-gray-600 mt-1">Divulgação, Mídia e Campanhas.</p>
+            </div>
+            <div class="p-6 bg-gray-50 shadow-lg rounded-xl text-center hover:bg-gray-100 transition duration-300">
+                <div class="w-24 h-24 bg-blue-300 rounded-full mx-auto mb-4 border-4 border-blue-600"></div>
+                <h3 class="font-extrabold text-xl text-blue-700">Tesoureiro Nacional</h3>
+                <p class="text-sm text-gray-600 mt-1">Gestão Financeira e Prestação de Contas.</p>
+            </div>
+            <div class="p-6 bg-gray-50 shadow-lg rounded-xl text-center hover:bg-gray-100 transition duration-300">
+                <div class="w-24 h-24 bg-blue-300 rounded-full mx-auto mb-4 border-4 border-blue-600"></div>
+                <h3 class="font-extrabold text-xl text-blue-700">Secretário de Formação</h3>
+                <p class="text-sm text-gray-600 mt-1">Desenvolvimento Político e Liderança.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="base" class="py-20 px-6 md:px-12 bg-gray-50">
+        <div class="container mx-auto grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <h2 class="text-4xl font-extrabold text-blue-800 mb-6 border-b-4 border-yellow-400 pb-2 inline-block">Nossa Base de Eleitores</h2>
+                <p class="text-xl leading-relaxed text-justify mb-4">
+                    O Partido Brasil Unido representa a **diversidade** do nosso país. Nossa base é composta por **trabalhadores, estudantes, famílias de classe média** e jovens que buscam um futuro com mais diálogo, oportunidades e justiça.
+                </p>
+                <p class="text-lg leading-relaxed text-justify">
+                    Somos a voz daqueles que acreditam em um Brasil construído com **equilíbrio e participação**.
+                </p>
+            </div>
+            <div class="flex justify-center md:justify-end">
+                <div class="w-full h-72 bg-green-200 rounded-lg shadow-xl flex items-center justify-center border-4 border-green-500 max-w-md">
+                    <span class="text-green-800 text-center font-bold">Imagem da Base (Trabalhadores, Jovens)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-blue-900 text-white text-center shadow-inner">
+        <h2 class="text-5xl font-extrabold mb-4">Junte-se ao PBU!</h2>
+        <p class="text-xl mb-8 font-light">Vamos construir juntos um Brasil mais justo, unido e desenvolvido.</p>
+        <a href="#contato" class="bg-yellow-400 text-blue-900 font-extrabold text-lg py-3 px-10 rounded-full hover:bg-yellow-300 transition duration-300 shadow-xl hover:shadow-2xl uppercase tracking-wider">
+            Seja um Apoiador
+        </a>
+    </section>
+
+    <footer id="contato" class="bg-blue-900 text-white py-10">
+        <div class="container mx-auto px-6 md:px-12 text-center">
+            <div class="grid md:grid-cols-3 gap-6 border-b border-blue-700 pb-6 mb-6">
+                <div class="text-left md:text-center">
+                    <h4 class="font-bold text-lg mb-2 text-yellow-400">Contato</h4>
+                    <p>📞 (11) 4002-8922</p>
+                    <p>📧 <a href="mailto:contato@pbu.org.br" class="hover:underline">contato@pbu.org.br</a></p>
+                </div>
+                <div class="text-left md:text-center">
+                    <h4 class="font-bold text-lg mb-2 text-yellow-400">Localização</h4>
+                    <p>🏛️ Av. da União, 123</p>
+                    <p>Brasília, DF - CEP 70000-000</p>
+                </div>
+                <div class="text-left md:text-center">
+                    <h4 class="font-bold text-lg mb-2 text-yellow-400">Redes Sociais</h4>
+                    <div class="flex gap-4 mt-2 md:justify-center">
+                        <a href="https://www.facebook.com/partidobrasilunido" target="_blank" aria-label="Facebook" class="w-8 h-8 bg-blue-700 rounded-full hover:bg-blue-600 transition flex items-center justify-center">
+                            <svg class="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                        </a>
+                        <a href="https://twitter.com/partidobrasilunido" target="_blank" aria-label="Twitter" class="w-8 h-8 bg-blue-700 rounded-full hover:bg-blue-600 transition flex items-center justify-center">
+                            <svg class="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c11.956 0 18.498-9.914 18.498-18.497 0-.282-.007-.563-.017-.842A13.06 13.06 0 0024 3.407a11.536 11.536 0 01-3.37.927 5.753 5.753 0 002.53-3.237 11.574 11.574 0 01-3.69 1.407 5.748 5.748 0 00-9.805 5.234A16.354 16.354 0 013 4.238a5.747 5.747 0 001.784 7.68A5.736 5.736 0 012.98 11.45c.002.062.002.124.002.185a5.747 5.747 0 004.608 5.633 5.77 5.77 0 01-2.583.098 5.748 5.748 0 005.353 4.008 11.547 11.547 0 01-7.149 2.45c-.463 0-.92-.027-1.368-.078A16.356 16.356 0 008.29 20.251z" /></svg>
+                        </a>
+                        <a href="https://www.instagram.com/partidobrasilunido" target="_blank" aria-label="Instagram" class="w-8 h-8 bg-blue-700 rounded-full hover:bg-blue-600 transition flex items-center justify-center">
+                            <svg class="h-5 w-5 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.792.01 3.249.073a4.911 4.911 0 011.77 1.054 4.92 4.92 0 011.054 1.77c.063.457.073.819.073 3.249v.081c0 2.43-.01 2.792-.073 3.249a4.912 4.912 0 01-1.054 1.77 4.92 4.92 0 01-1.77 1.054c-.457.063-.819.073-3.249.073h-.081c-2.43 0-2.792-.01-3.249-.073a4.911 4.911 0 01-1.77-1.054 4.92 4.92 0 01-1.054-1.77c-.063-.457-.073-.819-.073-3.249v-.081c0-2.43.01-2.792.073-3.249a4.911 4.911 0 011.054-1.77 4.92 4.92 0 011.77-1.054c.457-.063.819-.073 3.249-.073h.081zm0 2.164c-2.03 0-2.288.007-3.084.066a2.76 2.76 0 00-1.002.502 2.75 2.75 0 00-.502 1.002c-.059.796-.066 1.054-.066 3.084v.045c0 2.03.007 2.288.066 3.084a2.76 2.76 0 00.502 1.002 2.75 2.75 0 001.002.502c.796.059 1.054.066 3.084.066h.045c2.03 0 2.288-.007 3.084-.066a2.76 2.76 0 001.002-.502 2.75 2.75 0 00.502-1.002c.059-.796.066-1.054.066-3.084v-.045c0-2.03-.007-2.288-.066-3.084a2.76 2.76 0 00-.502-1.002 2.75 2.75 0 00-1.002-.502c-.796-.059-1.054-.066-3.084-.066h-.045zM12.315 9.176c-1.57 0-2.846 1.276-2.846 2.846s1.276 2.846 2.846 2.846 2.846-1.276 2.846-2.846-1.276-2.846-2.846-2.846zM12.315 13.987c-.98 0-1.772-.792-1.772-1.772 0-.98.792-1.772 1.772-1.772s1.772.792 1.772 1.772c0 .98-.792 1.772-1.772 1.772zm3.633-6.918a.864.864 0 01-.864-.864c0-.476.388-.864.864-.864.476 0 .864.388.864.864a.864.864 0 01-.864.864z" clip-rule="evenodd" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-4 text-sm text-blue-300">&copy; 2025 Partido Brasil Unido - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
